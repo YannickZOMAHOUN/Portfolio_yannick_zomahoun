@@ -1,0 +1,1499 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yannick Zomahoun — Développeur Web & Enseignant</title>
+    <meta
+      name="description"
+      content="Portfolio de Yannick Zomahoun, développeur web Laravel spécialisé et enseignant en informatique au Bénin."
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- =========== CURSOR CUSTOM =========== -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- =========== LOADER =========== -->
+    <div id="loader">
+      <div class="loader-inner">
+        <div class="loader-logo">YZ</div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+      </div>
+    </div>
+
+    <!-- =========== NAVIGATION =========== -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">YZ</span>
+          <span class="logo-dot"></span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#accueil" class="nav-link active" data-section="accueil"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="#apropos" class="nav-link" data-section="apropos"
+              >À propos</a
+            >
+          </li>
+          <li>
+            <a href="#competences" class="nav-link" data-section="competences"
+              >Compétences</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="nav-link" data-section="experience"
+              >Expérience</a
+            >
+          </li>
+          <li>
+            <a href="#projets" class="nav-link" data-section="projets"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button class="nav-cta" onclick="scrollToSection('contact')">
+          <span>Me contacter</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li>
+          <a href="#accueil" class="mobile-link" data-section="accueil"
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a href="#apropos" class="mobile-link" data-section="apropos"
+            >À propos</a
+          >
+        </li>
+        <li>
+          <a href="#competences" class="mobile-link" data-section="competences"
+            >Compétences</a
+          >
+        </li>
+        <li>
+          <a href="#experience" class="mobile-link" data-section="experience"
+            >Expérience</a
+          >
+        </li>
+        <li>
+          <a href="#projets" class="mobile-link" data-section="projets"
+            >Projets</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="mobile-link" data-section="contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- =========== MAIN CONTENT =========== -->
+    <main>
+      <!-- ===== HERO SECTION ===== -->
+      <section id="accueil" class="section hero-section">
+        <!-- Background Elements -->
+        <div class="hero-bg">
+          <div class="hero-grid"></div>
+          <div class="hero-orb hero-orb-1"></div>
+          <div class="hero-orb hero-orb-2"></div>
+          <div class="hero-orb hero-orb-3"></div>
+          <div class="floating-shapes">
+            <div class="shape shape-1"><i class="fab fa-laravel"></i></div>
+            <div class="shape shape-2"><i class="fab fa-php"></i></div>
+            <div class="shape shape-3"><i class="fab fa-js"></i></div>
+            <div class="shape shape-4"><i class="fab fa-html5"></i></div>
+            <div class="shape shape-5"><i class="fas fa-database"></i></div>
+            <div class="shape shape-6"><i class="fab fa-css3-alt"></i></div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Disponible pour des projets
+            </div>
+            <h1 class="hero-title">
+              <span class="title-line-1">Yannick</span>
+              <span class="title-line-2">Zomahoun</span>
+            </h1>
+            <div class="hero-roles">
+              <span class="role-prefix">Je suis</span>
+              <div class="roles-carousel">
+                <span class="role active">Développeur Laravel</span>
+                <span class="role">Développeur Web Full Stack</span>
+                <span class="role">Enseignant en Informatique</span>
+                <span class="role">Créateur de Solutions</span>
+              </div>
+            </div>
+            <p class="hero-description">
+              Passionné par la création de solutions web innovantes et la
+              transmission du savoir informatique au Bénin. Je transforme vos
+              idées en applications robustes et élégantes.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary" onclick="scrollToSection('projets')">
+                <span>Voir mes projets</span>
+                <i class="fas fa-arrow-down"></i>
+              </button>
+              <button
+                class="btn-secondary"
+                onclick="scrollToSection('contact')"
+              >
+                <span>Travailler ensemble</span>
+              </button>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Ans d'expérience</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat">
+                <span class="stat-number" data-target="5">0</span>
+                <span class="stat-label">Projets réalisés</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Langues maîtrisées</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-avatar-container">
+              <div class="avatar-ring ring-1"></div>
+              <div class="avatar-ring ring-2"></div>
+              <div class="avatar-ring ring-3"></div>
+              <div class="avatar-placeholder">
+                <span class="avatar-initials">YZ</span>
+                <div class="avatar-glow"></div>
+              </div>
+              <div class="avatar-badge-card card-1">
+                <i class="fab fa-laravel"></i>
+                <span>Laravel Expert</span>
+              </div>
+              <div class="avatar-badge-card card-2">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Enseignant</span>
+              </div>
+              <div class="avatar-badge-card card-3">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bénin 🇧🇯</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span>Défiler</span>
+        </div>
+      </section>
+
+      <!-- ===== À PROPOS SECTION ===== -->
+      <section id="apropos" class="section about-section">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">À propos</span>
+            <h2 class="section-title">Qui suis-je ?</h2>
+            <p class="section-subtitle">
+              Développeur web passionné et enseignant dévoué au Bénin
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-left" data-aos="fade-right">
+              <div class="about-image-wrapper">
+                <div class="about-image-bg"></div>
+                <div class="about-image-card">
+                  <div class="about-initials">YZ</div>
+                  <div class="about-tags">
+                    <span class="tag"
+                      ><i class="fab fa-laravel"></i> Laravel</span
+                    >
+                    <span class="tag"
+                      ><i class="fas fa-chalkboard-teacher"></i>
+                      Enseignant</span
+                    >
+                    <span class="tag"
+                      ><i class="fas fa-code"></i> Full Stack</span
+                    >
+                    <span class="tag"
+                      ><i class="fas fa-globe-africa"></i> Bénin</span
+                    >
+                  </div>
+                </div>
+                <div class="about-exp-badge">
+                  <span class="exp-number">3+</span>
+                  <span class="exp-text">Années<br />d'exp.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-right" data-aos="fade-left">
+              <div class="about-intro">
+                <h3>
+                  Bonjour 👋, je suis
+                  <span class="highlight">Yannick Zomahoun</span>
+                </h3>
+                <p>
+                  Développeur en Systèmes Informatiques et Logiciels, je me
+                  spécialise dans la création d'applications web robustes et
+                  élégantes avec Laravel. Ma double casquette de développeur et
+                  d'enseignant me permet d'avoir une approche pédagogique unique
+                  du développement.
+                </p>
+                <p>
+                  Basé à <strong>Abomey, Bénin</strong>, je suis passionné par
+                  l'innovation technologique en Afrique et m'engage à former la
+                  prochaine génération de développeurs au Lycée Technique de
+                  Bohicon.
+                </p>
+              </div>
+              <div class="about-details">
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Localisation</span>
+                    <span class="detail-value">Abomey, Bénin 🇧🇯</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Formation</span>
+                    <span class="detail-value"
+                      >Licence Pro SIL — Les Cours Sonou</span
+                    >
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="detail-info">
+                    <span class="detail-label">Poste actuel</span>
+                    <span class="detail-value"
+                      >Enseignant & Développeur freelance</span
+                    >
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="detail-info">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value"
+                      >yannickzomahoun75@gmail.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="about-hobbies">
+                <h4>Loisirs & Passions</h4>
+                <div class="hobbies-grid">
+                  <div class="hobby">
+                    <i class="fas fa-book"></i><span>Lecture</span>
+                  </div>
+                  <div class="hobby">
+                    <i class="fas fa-dumbbell"></i><span>Sport / Gym</span>
+                  </div>
+                  <div class="hobby">
+                    <i class="fas fa-tshirt"></i><span>Fashion</span>
+                  </div>
+                  <div class="hobby">
+                    <i class="fas fa-utensils"></i><span>Cuisine</span>
+                  </div>
+                  <div class="hobby">
+                    <i class="fas fa-microchip"></i><span>Technologie</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about-languages">
+                <h4>Langues</h4>
+                <div class="langs-grid">
+                  <div class="lang-item">
+                    <span class="lang-flag">🇫🇷</span>
+                    <div class="lang-info">
+                      <span class="lang-name">Français</span>
+                      <div class="lang-bar">
+                        <div class="lang-fill" style="width: 95%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lang-item">
+                    <span class="lang-flag">🇬🇧</span>
+                    <div class="lang-info">
+                      <span class="lang-name">Anglais</span>
+                      <div class="lang-bar">
+                        <div class="lang-fill" style="width: 70%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lang-item">
+                    <span class="lang-flag">🇪🇸</span>
+                    <div class="lang-info">
+                      <span class="lang-name">Espagnol</span>
+                      <div class="lang-bar">
+                        <div class="lang-fill" style="width: 50%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lang-item">
+                    <span class="lang-flag">🌍</span>
+                    <div class="lang-info">
+                      <span class="lang-name">Fon</span>
+                      <div class="lang-bar">
+                        <div class="lang-fill" style="width: 100%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== COMPÉTENCES SECTION ===== -->
+      <section id="competences" class="section skills-section">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Compétences</span>
+            <h2 class="section-title">Mon Arsenal Technique</h2>
+            <p class="section-subtitle">
+              Les technologies que j'utilise pour construire des solutions
+              performantes
+            </p>
+          </div>
+
+          <div class="skills-categories" data-aos="fade-up">
+            <button class="skill-cat-btn active" data-cat="all">Tout</button>
+            <button class="skill-cat-btn" data-cat="backend">Backend</button>
+            <button class="skill-cat-btn" data-cat="frontend">Frontend</button>
+            <button class="skill-cat-btn" data-cat="tools">Outils</button>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Backend -->
+            <div
+              class="skill-card"
+              data-cat="backend"
+              data-aos="zoom-in"
+              data-aos-delay="0"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #ff2d20, #ff6b6b)"
+              >
+                <i class="fab fa-laravel"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Laravel</h4>
+                <span class="skill-level expert">Expert</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="90"></div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="backend"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #777bb4, #9b9bc8)"
+              >
+                <i class="fab fa-php"></i>
+              </div>
+              <div class="skill-info">
+                <h4>PHP</h4>
+                <span class="skill-level expert">Expert</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="88"></div>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="backend"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #4479a1, #5590b3)"
+              >
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="skill-info">
+                <h4>MySQL</h4>
+                <span class="skill-level advanced">Avancé</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="82"></div>
+              </div>
+              <span class="skill-percentage">82%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="backend"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #00b4d8, #0077b6)"
+              >
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4>REST API</h4>
+                <span class="skill-level advanced">Avancé</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="78"></div>
+              </div>
+              <span class="skill-percentage">78%</span>
+            </div>
+
+            <!-- Frontend -->
+            <div
+              class="skill-card"
+              data-cat="frontend"
+              data-aos="zoom-in"
+              data-aos-delay="0"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #e34f26, #f06529)"
+              >
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <h4>HTML5</h4>
+                <span class="skill-level expert">Expert</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="92"></div>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="frontend"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #1572b6, #2196f3)"
+              >
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4>CSS3</h4>
+                <span class="skill-level expert">Expert</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="88"></div>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="frontend"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #f7df1e, #ffc107)"
+              >
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <span class="skill-level intermediate">Intermédiaire</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="70"></div>
+              </div>
+              <span class="skill-percentage">70%</span>
+            </div>
+
+            <!-- Tools -->
+            <div
+              class="skill-card"
+              data-cat="tools"
+              data-aos="zoom-in"
+              data-aos-delay="0"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #31a8ff, #00a3e0)"
+              >
+                <i class="fab fa-adobe"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Adobe Photoshop</h4>
+                <span class="skill-level intermediate">Intermédiaire</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="65"></div>
+              </div>
+              <span class="skill-percentage">65%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="tools"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #2b579a, #1e4d8c)"
+              >
+                <i class="fas fa-file-word"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Microsoft Word</h4>
+                <span class="skill-level advanced">Avancé</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="80"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+
+            <div
+              class="skill-card"
+              data-cat="tools"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="skill-icon"
+                style="background: linear-gradient(135deg, #00b4ab, #009688)"
+              >
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <div class="skill-info">
+                <h4>Réseaux Informatiques</h4>
+                <span class="skill-level advanced">Avancé</span>
+              </div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" data-width="75"></div>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+          </div>
+
+          <!-- Tech Stack Visual -->
+          <div class="tech-stack-visual" data-aos="fade-up">
+            <h3>Ma Stack Favorite</h3>
+            <div class="stack-flow">
+              <div class="stack-item">
+                <div class="stack-icon"><i class="fab fa-laravel"></i></div>
+                <span>Laravel</span>
+              </div>
+              <div class="stack-arrow"><i class="fas fa-plus"></i></div>
+              <div class="stack-item">
+                <div class="stack-icon"><i class="fas fa-database"></i></div>
+                <span>MySQL</span>
+              </div>
+              <div class="stack-arrow"><i class="fas fa-plus"></i></div>
+              <div class="stack-item">
+                <div class="stack-icon"><i class="fab fa-html5"></i></div>
+                <span>HTML/CSS</span>
+              </div>
+              <div class="stack-arrow"><i class="fas fa-plus"></i></div>
+              <div class="stack-item">
+                <div class="stack-icon"><i class="fab fa-js"></i></div>
+                <span>JavaScript</span>
+              </div>
+              <div class="stack-arrow"><i class="fas fa-equals"></i></div>
+              <div class="stack-item stack-result">
+                <div class="stack-icon"><i class="fas fa-rocket"></i></div>
+                <span>Résultat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EXPÉRIENCE SECTION ===== -->
+      <section id="experience" class="section experience-section">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Parcours</span>
+            <h2 class="section-title">Expérience & Formation</h2>
+            <p class="section-subtitle">
+              Mon chemin professionnel et académique
+            </p>
+          </div>
+
+          <div class="timeline-tabs" data-aos="fade-up">
+            <button class="timeline-tab active" data-tab="experience">
+              <i class="fas fa-briefcase"></i> Expérience
+            </button>
+            <button class="timeline-tab" data-tab="formation">
+              <i class="fas fa-graduation-cap"></i> Formation
+            </button>
+          </div>
+
+          <!-- Experience Timeline -->
+          <div class="timeline" id="experience-timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+              <div class="timeline-marker current">
+                <div class="marker-dot"></div>
+                <div class="marker-ring"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-date">
+                    <span class="date-badge current-badge">2023 — Présent</span>
+                  </div>
+                  <div class="timeline-company">
+                    <div class="company-logo">
+                      <i class="fas fa-school"></i>
+                    </div>
+                    <div class="company-info">
+                      <h4>Lycée Technique de Bohicon</h4>
+                      <span class="company-location"
+                        ><i class="fas fa-map-marker-alt"></i> Bohicon,
+                        Bénin</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <h3 class="timeline-title">Enseignant en Informatique</h3>
+                <p class="timeline-desc">
+                  Enseignement dans la filière Informatique Industrielle et
+                  Maintenance. Transmission des connaissances en réseaux
+                  informatiques, développement web et technologies VoIP à la
+                  prochaine génération de techniciens.
+                </p>
+                <div class="timeline-tags">
+                  <span><i class="fas fa-network-wired"></i> Réseaux</span>
+                  <span><i class="fas fa-code"></i> Dev Web</span>
+                  <span><i class="fas fa-phone-alt"></i> VoIP</span>
+                  <span
+                    ><i class="fas fa-chalkboard-teacher"></i> Pédagogie</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-date">
+                    <span class="date-badge">Mai — Août 2023</span>
+                  </div>
+                  <div class="timeline-company">
+                    <div class="company-logo">
+                      <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="company-info">
+                      <h4>SONAB</h4>
+                      <span class="company-location"
+                        ><i class="fas fa-map-marker-alt"></i> Bohicon,
+                        Bénin</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <h3 class="timeline-title">Développeur Web — Stagiaire</h3>
+                <p class="timeline-desc">
+                  Développement d'une application web de gestion des données de
+                  balisage. Conception et implémentation d'une solution complète
+                  avec Laravel et MySQL pour optimiser le suivi des opérations
+                  industrielles.
+                </p>
+                <div class="timeline-tags">
+                  <span><i class="fab fa-laravel"></i> Laravel</span>
+                  <span><i class="fas fa-database"></i> MySQL</span>
+                  <span><i class="fas fa-chart-bar"></i> Data Management</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-date">
+                    <span class="date-badge">Fév — Août 2022</span>
+                  </div>
+                  <div class="timeline-company">
+                    <div class="company-logo">
+                      <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="company-info">
+                      <h4>JTeK Solutions</h4>
+                      <span class="company-location"
+                        ><i class="fas fa-map-marker-alt"></i> Cotonou,
+                        Bénin</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <h3 class="timeline-title">Développeur Web — Stagiaire</h3>
+                <p class="timeline-desc">
+                  Développement d'une application de gestion pour cabinet
+                  d'avocat. Création d'un système permettant la gestion des
+                  dossiers clients, des rendez-vous et du suivi judiciaire.
+                </p>
+                <div class="timeline-tags">
+                  <span><i class="fab fa-laravel"></i> Laravel</span>
+                  <span><i class="fab fa-php"></i> PHP</span>
+                  <span><i class="fas fa-balance-scale"></i> Legal App</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formation Timeline -->
+          <div class="timeline hidden" id="formation-timeline">
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-date">
+                    <span class="date-badge">2019 — 2021</span>
+                  </div>
+                  <div class="timeline-company">
+                    <div class="company-logo">
+                      <i class="fas fa-university"></i>
+                    </div>
+                    <div class="company-info">
+                      <h4>Les Cours Sonou</h4>
+                      <span class="company-location"
+                        ><i class="fas fa-map-marker-alt"></i> Bénin</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <h3 class="timeline-title">Licence Professionnelle en SIL</h3>
+                <p class="timeline-desc">
+                  Licence Professionnelle en Systèmes Informatiques et
+                  Logiciels. Formation complète en développement logiciel, bases
+                  de données, réseaux et gestion de projets informatiques.
+                </p>
+                <div class="timeline-tags">
+                  <span><i class="fas fa-code"></i> Développement</span>
+                  <span><i class="fas fa-database"></i> BDD</span>
+                  <span><i class="fas fa-network-wired"></i> Réseaux</span>
+                  <span
+                    ><i class="fas fa-project-diagram"></i> Gestion Projet</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-date">
+                    <span class="date-badge">Juin 2017</span>
+                  </div>
+                  <div class="timeline-company">
+                    <div class="company-logo">
+                      <i class="fas fa-school"></i>
+                    </div>
+                    <div class="company-info">
+                      <h4>CEG1 Abomey</h4>
+                      <span class="company-location"
+                        ><i class="fas fa-map-marker-alt"></i> Abomey,
+                        Bénin</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <h3 class="timeline-title">Baccalauréat Série D</h3>
+                <p class="timeline-desc">
+                  Obtention du Baccalauréat Série D (Sciences exactes) au CEG1
+                  Abomey. Solide base scientifique qui a alimenté ma passion
+                  pour l'informatique et la résolution de problèmes complexes.
+                </p>
+                <div class="timeline-tags">
+                  <span><i class="fas fa-flask"></i> Sciences</span>
+                  <span
+                    ><i class="fas fa-square-root-alt"></i> Mathématiques</span
+                  >
+                  <span><i class="fas fa-atom"></i> Physique</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJETS SECTION ===== -->
+      <section id="projets" class="section projects-section">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">Mes Projets</h2>
+            <p class="section-subtitle">
+              Des solutions concrètes que j'ai développées
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card featured" data-aos="fade-up">
+              <div class="project-visual">
+                <div class="project-mockup">
+                  <div class="mockup-bar">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-content school">
+                    <div class="mockup-sidebar">
+                      <div class="mockup-menu-item active"></div>
+                      <div class="mockup-menu-item"></div>
+                      <div class="mockup-menu-item"></div>
+                      <div class="mockup-menu-item"></div>
+                    </div>
+                    <div class="mockup-main">
+                      <div class="mockup-title-bar"></div>
+                      <div class="mockup-stats">
+                        <div class="mockup-stat-card">
+                          <div class="mockup-num"></div>
+                          <div class="mockup-label-sm"></div>
+                        </div>
+                        <div class="mockup-stat-card">
+                          <div class="mockup-num"></div>
+                          <div class="mockup-label-sm"></div>
+                        </div>
+                        <div class="mockup-stat-card">
+                          <div class="mockup-num"></div>
+                          <div class="mockup-label-sm"></div>
+                        </div>
+                      </div>
+                      <div class="mockup-table">
+                        <div class="mockup-row header"></div>
+                        <div class="mockup-row"></div>
+                        <div class="mockup-row"></div>
+                        <div class="mockup-row"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-tag-featured">⭐ Projet phare</div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">
+                  <i class="fas fa-graduation-cap"></i> Application de Gestion
+                  Scolaire
+                </div>
+                <h3 class="project-title">School Manager</h3>
+                <p class="project-desc">
+                  Application complète de gestion scolaire permettant de gérer
+                  les notes, calculer automatiquement les moyennes et générer
+                  des bulletins PDF. Une solution moderne pour digitaliser
+                  l'administration scolaire au Bénin.
+                </p>
+                <div class="project-features">
+                  <div class="feature">
+                    <i class="fas fa-check-circle"></i> Gestion des notes &
+                    moyennes
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle"></i> Génération de bulletins
+                    PDF
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle"></i> Tableau de bord
+                    administrateur
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-check-circle"></i> Gestion multi-classes
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span class="tech-badge laravel"
+                    ><i class="fab fa-laravel"></i> Laravel</span
+                  >
+                  <span class="tech-badge mysql"
+                    ><i class="fas fa-database"></i> MySQL</span
+                  >
+                  <span class="tech-badge php"
+                    ><i class="fab fa-php"></i> PHP</span
+                  >
+                  <span class="tech-badge html"
+                    ><i class="fab fa-html5"></i> HTML/CSS</span
+                  >
+                </div>
+                <div class="project-meta">
+                  <span class="project-year"
+                    ><i class="fas fa-calendar"></i> 2023 — 2025</span
+                  >
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/YannickZOMAHOUN/gestschool.git"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-visual">
+                <div class="project-mockup">
+                  <div class="mockup-bar">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-content gym">
+                    <div class="mockup-hero-gym">
+                      <div class="mockup-hero-text"></div>
+                      <div class="mockup-hero-btn"></div>
+                    </div>
+                    <div class="mockup-services">
+                      <div class="mockup-service-card"></div>
+                      <div class="mockup-service-card"></div>
+                      <div class="mockup-service-card"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">
+                  <i class="fas fa-dumbbell"></i> Site Vitrine
+                </div>
+                <h3 class="project-title">La Santé Par Le Sport</h3>
+                <p class="project-desc">
+                  Site vitrine moderne pour une salle de sport au Bénin.
+                  Présentation des services, tarifs, programme d'entraînement et
+                  formulaire de contact. Design attractif adapté à la clientèle
+                  locale.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-badge html"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-badge css"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-badge js"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                </div>
+                <div class="project-meta">
+                  <span class="project-year"
+                    ><i class="fas fa-calendar"></i> 2024</span
+                  >
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/yannickzomahoun"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-visual">
+                <div class="project-mockup">
+                  <div class="mockup-bar">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-content sweep">
+                    <div class="mockup-dashboard">
+                      <div class="mockup-kpi-row">
+                        <div class="mockup-kpi"></div>
+                        <div class="mockup-kpi"></div>
+                      </div>
+                      <div class="mockup-chart-area"></div>
+                      <div class="mockup-data-rows">
+                        <div class="mockup-data-row"></div>
+                        <div class="mockup-data-row"></div>
+                        <div class="mockup-data-row"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-category">
+                  <i class="fas fa-industry"></i> Application Industrielle
+                </div>
+                <h3 class="project-title">Gestion Données Balisage SONAB</h3>
+                <p class="project-desc">
+                  Application web de gestion et de visualisation des données de
+                  balayage industriel pour SONAB. Tableau de bord analytique
+                  avec suivi en temps réel des opérations.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-badge laravel"
+                    ><i class="fab fa-laravel"></i> Laravel</span
+                  >
+                  <span class="tech-badge mysql"
+                    ><i class="fas fa-database"></i> MySQL</span
+                  >
+                  <span class="tech-badge php"
+                    ><i class="fab fa-php"></i> PHP</span
+                  >
+                </div>
+                <div class="project-meta">
+                  <span class="project-year"
+                    ><i class="fas fa-calendar"></i> 2023</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-cta" data-aos="fade-up">
+            <a
+              href="https://github.com/yannickzomahoun"
+              target="_blank"
+              class="btn-github"
+            >
+              <i class="fab fa-github"></i>
+              <span>Voir tous mes projets sur GitHub</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== RÉFÉRENCES SECTION ===== -->
+      <section id="references" class="section references-section">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Témoignages</span>
+            <h2 class="section-title">Références</h2>
+            <p class="section-subtitle">
+              Ce que disent mes collaborateurs et superviseurs
+            </p>
+          </div>
+
+          <div class="refs-grid">
+            <div class="ref-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="ref-quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="ref-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="ref-text">
+                M. Zomahoun est un enseignant exemplaire et un professionnel du
+                numérique accompli. Son portfolio personnel témoigne d'un niveau
+                technique élevé en développement web. Sa pédagogie, son sens des
+                responsabilités et son engagement pour la réussite des
+                apprenants font de lui un atout majeur pour tout établissement
+                ou structure qui aura la chance de collaborer avec lui.
+              </p>
+              <div class="ref-author">
+                <div class="ref-avatar">CA</div>
+                <div class="ref-info">
+                  <h4>Corentin AKPAKOUN</h4>
+                  <span>Proviseur — LYTEB</span>
+                  <a href="tel:+22995304673" class="ref-contact">
+                    <i class="fas fa-phone"></i> +229 01 95 17 62 84
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ref-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="ref-quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="ref-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="ref-text">
+                Yannick a été l'un des enseignants les plus investis de notre
+                établissement. Sa maîtrise des technologies web, lui a permis de
+                dispenser des cours d'une qualité rare. Ponctuel, rigoureux et
+                toujours disponible pour ses élèves, il a contribué activement à
+                l'amélioration du cadre numérique de notre lycée. Je le
+                recommande sans réserve.
+              </p>
+              <div class="ref-author">
+                <div class="ref-avatar">BA</div>
+                <div class="ref-info">
+                  <h4>Maruis TOSSA</h4>
+                  <span>Directeur des Etudes — LYTEB</span>
+                  <a href="tel:+22995304673" class="ref-contact">
+                    <i class="fas fa-phone"></i> +229 01 97 68 95 81
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="ref-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="ref-quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="ref-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="ref-text">
+                Yannick est un développeur talentueux et rigoureux. Il a su
+                prendre en charge des projets complexes avec une grande
+                autonomie et une qualité de livraison remarquable.
+              </p>
+              <div class="ref-author">
+                <div class="ref-avatar">JA</div>
+                <div class="ref-info">
+                  <h4>Judicaël Alladagbin</h4>
+                  <span>Directeur — Valeur Universelle</span>
+                  <a href="tel:+22994326312" class="ref-contact">
+                    <i class="fas fa-phone"></i> +229 01 94 326 312
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="ref-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="ref-quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div class="ref-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="ref-text">
+                Durant son stage chez SONAB, Yannick a démontré une excellente
+                maîtrise de Laravel et une capacité à comprendre rapidement les
+                besoins métier pour les traduire en solutions techniques
+                efficaces.
+              </p>
+              <div class="ref-author">
+                <div class="ref-avatar">BA</div>
+                <div class="ref-info">
+                  <h4>Blaise Anato</h4>
+                  <span>CSI — SONAB</span>
+                  <a href="tel:+22995304673" class="ref-contact">
+                    <i class="fas fa-phone"></i> +229 01 95 304 673
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT SECTION ===== -->
+      <section id="contact" class="section contact-section">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Contact</span>
+            <h2 class="section-title">Travaillons Ensemble</h2>
+            <p class="section-subtitle">
+              Un projet en tête ? N'hésitez pas à me contacter
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-left" data-aos="fade-right">
+              <div class="contact-info-card">
+                <h3>Discutons de votre projet</h3>
+                <p>
+                  Je suis disponible pour des projets freelance, des
+                  collaborations ou des opportunités d'emploi. Contactez-moi et
+                  construisons quelque chose d'incroyable ensemble !
+                </p>
+
+                <div class="contact-items">
+                  <a href="tel:+2290168374902" class="contact-item">
+                    <div class="contact-item-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-item-info">
+                      <span class="contact-item-label">Téléphone</span>
+                      <span class="contact-item-value">+229 01 68 374 902</span>
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+                  </a>
+
+                  <a
+                    href="mailto:yannickzomahoun75@gmail.com"
+                    class="contact-item"
+                  >
+                    <div class="contact-item-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-item-info">
+                      <span class="contact-item-label">Email</span>
+                      <span class="contact-item-value"
+                        >yannickzomahoun75@gmail.com</span
+                      >
+                    </div>
+                    <i class="fas fa-arrow-right contact-arrow"></i>
+                  </a>
+
+                  <div class="contact-item">
+                    <div class="contact-item-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-item-info">
+                      <span class="contact-item-label">Localisation</span>
+                      <span class="contact-item-value">Abomey, Bénin 🇧🇯</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-links">
+                  <h4>Réseaux Sociaux</h4>
+                  <div class="socials">
+                    <a
+                      href="https://github.com/yannickzomahoun"
+                      target="_blank"
+                      class="social-btn github"
+                    >
+                      <i class="fab fa-github"></i>
+                      <span>GitHub</span>
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/yannickzomahoun"
+                      target="_blank"
+                      class="social-btn linkedin"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a
+                      href="https://linktr.ee/yannickzomahoun"
+                      target="_blank"
+                      class="social-btn linktree"
+                    >
+                      <i class="fas fa-link"></i>
+                      <span>Linktree</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-right" data-aos="fade-left">
+              <div class="contact-form-card">
+                <h3>Envoyer un message</h3>
+                <form id="contactForm" class="contact-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="name">Nom complet *</label>
+                      <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="Votre nom"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email *</label>
+                      <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="votre@email.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <div class="input-wrapper">
+                      <i class="fas fa-tag"></i>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Projet Web, Collaboration..."
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message *</label>
+                    <div class="input-wrapper textarea-wrapper">
+                      <i class="fas fa-comment-alt"></i>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Décrivez votre projet ou votre demande..."
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="form-submit">
+                    <span class="submit-text">Envoyer le message</span>
+                    <i class="fas fa-paper-plane"></i>
+                    <div class="submit-loader hidden">
+                      <i class="fas fa-circle-notch fa-spin"></i>
+                    </div>
+                  </button>
+                </form>
+                <div id="formSuccess" class="form-success hidden">
+                  <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <h4>Message envoyé avec succès !</h4>
+                  <p>
+                    Merci pour votre message. Je vous répondrai dans les
+                    meilleurs délais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========== FOOTER =========== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">YZ</div>
+            <p>
+              Développeur Web Laravel & Enseignant en Informatique au Bénin.
+              Passionné par la création de solutions numériques innovantes.
+            </p>
+            <div class="footer-socials">
+              <a href="https://github.com/yannickzomahoun" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://linkedin.com/in/yannickzomahoun" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://linktr.ee/yannickzomahoun" target="_blank"
+                ><i class="fas fa-link"></i
+              ></a>
+              <a href="mailto:yannickzomahoun75@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#apropos">À propos</a></li>
+              <li><a href="#competences">Compétences</a></li>
+              <li><a href="#experience">Expérience</a></li>
+              <li><a href="#projets">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact rapide</h4>
+            <ul>
+              <li><i class="fas fa-phone"></i> +229 68 374 902</li>
+              <li>
+                <i class="fas fa-envelope"></i> yannickzomahoun75@gmail.com
+              </li>
+              <li><i class="fas fa-map-marker-alt"></i> Abomey, Bénin 🇧🇯</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Yannick Zomahoun. Tous droits réservés.</p>
+          <p>
+            Développé avec
+            <i class="fas fa-heart" style="color: #ff2d20"></i> au Bénin
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
